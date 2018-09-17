@@ -6240,14 +6240,10 @@ return Promise;
 "use strict";
 
 
-var _faunadb = __webpack_require__(33);
+const faunadb = __webpack_require__(33);
 
-var _faunadb2 = _interopRequireDefault(_faunadb);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const q = _faunadb2.default.query;
-const client = new _faunadb2.default.Client({
+const q = faunadb.query;
+const client = new faunadb.Client({
   secret: process.env.FAUNADB_SECRET
 });
 

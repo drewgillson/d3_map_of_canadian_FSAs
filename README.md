@@ -4,5 +4,5 @@ This page will subscribe to a list FSAs to highlight, and the list will be maint
 ## Notes ##
 > To build functions locally
 ```
-node node_modules/netlify-lambda/bin/cmd.js build functions_src
+node node_modules/netlify-lambda/bin/cmd.js build src
 ```

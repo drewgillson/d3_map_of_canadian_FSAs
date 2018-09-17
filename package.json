@@ -1,7 +1,7 @@
 {
   "name": "unruffled-haibt-fb2b76",
   "repository": "https://github.com/drewgillson/d3_map_of_canadian_FSAs",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "faunadb": "^0.2.4",
     "netlify-lambda": "^0.4.0"
