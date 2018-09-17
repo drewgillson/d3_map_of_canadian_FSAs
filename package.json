@@ -3,7 +3,8 @@
   "repository": "https://github.com/drewgillson/d3_map_of_canadian_FSAs",
   "license": "",
   "dependencies": {
-    "faunadb": "^0.2.4"
+    "faunadb": "^0.2.4",
+    "netlify-lambda": "^0.4.0"
   },
   "devDependencies": {
     "netlify-lambda": "^0.4.0"
