@@ -13315,7 +13315,11 @@ client.query(q.Create(q.Ref("classes"), { name: "fsas" })).then(() => {
   }));
 }).catch(e => {
   if (e.requestResult.statusCode === 400 && e.message === 'instance not unique') {
+<<<<<<< HEAD
     console.log(e);
+=======
+    // index already exists
+>>>>>>> 4fe456a... Built functions
   }
 });
 
