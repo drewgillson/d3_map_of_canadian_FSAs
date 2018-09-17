@@ -96,7 +96,7 @@ function clicked(d,i) {
   else {
     d3.select(this).style('fill','green')
     return fetch('/.netlify/functions/add_fsa', {
-      body: JSON.stringify({fsa:d.properties.CFSAUID}),
+      body: JSON.stringify({data:{value:d.properties.CFSAUID}}),
       method: 'POST'
     }).then(response => {
       return response.json()
