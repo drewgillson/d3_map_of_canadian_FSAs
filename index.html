@@ -71,7 +71,7 @@ fetch('/.netlify/functions/list_fsa').then((response) => {
     fsas = []
     for (var d in data) {
       if (data.hasOwnProperty(d))
-        fsas.push(data[d].data.fsa)
+        fsas.push(data[d].data.data.value)
     }
     features.selectAll("path")
     .data(topojson.feature(geodata,geodata.objects.collection).features) //generate features from TopoJSON

@@ -15,12 +15,13 @@ client.query(q.Create(q.Ref("classes"), { name: "fsas" }))
       }))
 }).catch((e) => {
   if (e.requestResult.statusCode === 400 && e.message === 'instance not unique') {
-    // index already exists
+    console.log(e)
   }
 })
 
 exports.handler = (event, context, callback) => {
   const data = JSON.parse(event.body)
+  console.log(data);
   const dbItem = {
     data: data
   }
