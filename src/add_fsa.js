@@ -15,7 +15,6 @@ client.query(q.Create(q.Ref("classes"), { name: "fsas" }))
       }))
 }).catch((e) => {
   if (e.requestResult.statusCode === 400 && e.message === 'instance not unique') {
-    console.log(e)
     // index already exists
   }
 })
